@@ -2,148 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pawfect Accessories</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8f2;
-            color: #333;
-        }
-
-        header {
-            background-color: #ffb6b9;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #fff;
-            font-size: 2.5em;
-        }
-
-        nav {
-            background-color: #ffe0e0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .hero {
-            background-image: url('https://images.unsplash.com/photo-1601758123927-1962c2801ecb');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 1px 1px 5px #000;
-            font-size: 2em;
-        }
-
-        .container {
-            padding: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 250px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            margin: 15px 0 10px;
-            font-size: 1.2em;
-        }
-
-        .card p {
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .card button {
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #ffb6b9;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #ffb6b9;
-            text-align: center;
-            color: white;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Accessories Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header and Navigation -->
     <header>
-        <h1>Pawfect Accessories</h1>
+        <h1>Pet Accessories Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="hero">
-        Make Your Pets Feel Paw-some!
-    </div>
-
-    <section class="container">
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1616469832627-d6e33d6f2b39" alt="Pet Collar">
-            <h3>Designer Collars</h3>
-            <p>Stylish & comfy collars for your furry friends.</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1601758123837-6bdb3c00f334" alt="Pet Bed">
-            <h3>Comfy Pet Beds</h3>
-            <p>Soft, cozy beds perfect for cats and dogs.</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1583337130417-3346a1d3a20d" alt="Pet Toy">
-            <h3>Fun Toys</h3>
-            <p>Keep your pets active and entertained.</p>
-            <button>Buy Now</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Pet Accessories Store</h2>
+            <p>Everything your pet needs to stay happy and healthy!</p>
+            <a href="shop.html" class="cta-button">Shop Now</a>
         </div>
     </section>
 
+    <!-- Featured Products -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="assets/images/pet-collar.jpg" alt="Pet Collar">
+                <h3>Pet Collar</h3>
+                <p>$19.99</p>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/pet-bed.jpg" alt="Pet Bed">
+                <h3>Pet Bed</h3>
+                <p>$39.99</p>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/pet-toy.jpg" alt="Pet Toy">
+                <h3>Pet Toy</h3>
+                <p>$9.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        &copy; 2025 Pawfect Accessories. All rights reserved.
+        <p>&copy; 2025 Pet Accessories Store | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
